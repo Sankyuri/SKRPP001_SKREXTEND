@@ -81,6 +81,10 @@ namespace skrextend {
 		long double        lastLDouble();
 
 
+		// Move cursor to next a_ch.
+		void moveCursorTo(const char a_ch);
+
+
 
 
 		~TokenGetter();
