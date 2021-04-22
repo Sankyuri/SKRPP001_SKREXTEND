@@ -1,0 +1,5 @@
+define test_data {
+	data 0 100 100
+	data 1 120 50
+}
+
