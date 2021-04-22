@@ -287,7 +287,7 @@ long double        TokenGetter::lastLDouble() {
 
 void TokenGetter::moveCursorTo(const char a_ch) {
 	// to a_ch
-	m_cur = m_data.find_first_of(a_ch, m_cur);
+	m_cur = m_data.find_first_of(a_ch, m_cur) + 1;
 }
 
 
