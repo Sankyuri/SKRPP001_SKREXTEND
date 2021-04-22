@@ -137,7 +137,7 @@ std::string    TokenGetter::next() {
 	auto cnt = m_data.find_first_of(m_delim, m_cur);   // find delimiter
 	auto nxt = m_data.find_first_not_of(m_delim, cnt + 1); // find after delimiter
 	m_last   = m_data.substr(m_cur, cnt - m_cur); // trimming
-	m_cur    = nxt - 1; // move cursor
+	m_cur    = nxt; // move cursor
 	return m_last;
 }
 
