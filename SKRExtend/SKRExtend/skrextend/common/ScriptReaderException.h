@@ -3,6 +3,11 @@
 #include <xstring>
 
 
+
+
+namespace skrex {
+
+
 class FileOpenException : public std::exception {
 public:
     explicit FileOpenException(const std::string &a_fname) :
@@ -41,6 +46,9 @@ public:
     {}
 
 };
+
+
+} // namespace skrextend
 
 
 

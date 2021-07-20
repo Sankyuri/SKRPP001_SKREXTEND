@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "skrextend/scriptreader/tokengetter/TokenGetter.h"
+#include "skrextend/tokenizer/Tokenizer.h"
 
 
 using std::cout;
@@ -9,13 +9,13 @@ using std::endl;
 
 
 int main() {
-	skrextend::TokenGetter tkgetr("test.txt");
-	cout << tkgetr.last() << endl;
-	while ( ! tkgetr.isEnd()) {
-		cout << tkgetr.next() << endl;
-		cout << tkgetr.last() << endl;
+	skrex::Tokenizer tknzr("test.txt");
+	cout << tknzr.last() << endl;
+	while ( ! tknzr.isEnd()) {
+		cout << tknzr.next() << endl;
+		cout << tknzr.last() << endl;
 	}
-	cout << tkgetr.last() << endl;
+	cout << tknzr.last() << endl;
 }
 
 

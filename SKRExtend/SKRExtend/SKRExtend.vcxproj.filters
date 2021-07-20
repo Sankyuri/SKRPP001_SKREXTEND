@@ -18,7 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="skrextend\scriptreader\tokengetter\TokenGetter.cpp">
+    <ClCompile Include="skrextend\memoryex\memoryex.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="skrextend\tokenizer\Tokenizer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="skrextend\memriff\memriff.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,9 +38,6 @@
     <ClInclude Include="skrextend\tstring\tstring.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skrextend\scriptreader\tokengetter\TokenGetter.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="skrextend\std\tstring\tstring.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
@@ -44,7 +47,16 @@
     <ClInclude Include="skrextend\std\tstring\tiostream.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skrextend\scriptreader\tokengetter\ScriptReaderException.h">
+    <ClInclude Include="skrextend\memoryex\memoryex.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\common\ScriptReaderException.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\tokenizer\Tokenizer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\memriff\memriff.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

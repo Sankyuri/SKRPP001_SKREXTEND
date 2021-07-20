@@ -140,17 +140,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="skrextend\scriptreader\tokengetter\TokenGetter.cpp" />
+    <ClCompile Include="skrextend\memoryex\memoryex.cpp" />
+    <ClCompile Include="skrextend\memriff\memriff.cpp" />
+    <ClCompile Include="skrextend\tokenizer\Tokenizer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="skrextend\scriptreader\tokengetter\ScriptReaderException.h" />
+    <ClInclude Include="skrextend\memoryex\memoryex.h" />
+    <ClInclude Include="skrextend\memriff\memriff.h" />
     <ClInclude Include="skrextend\std\tstring\tiosfwd.h" />
     <ClInclude Include="skrextend\std\tstring\tiostream.h" />
     <ClInclude Include="skrextend\std\tstring\tstring.h" />
+    <ClInclude Include="skrextend\common\ScriptReaderException.h" />
+    <ClInclude Include="skrextend\tokenizer\Tokenizer.h" />
     <ClInclude Include="skrextend\tstring\tiosfwd.h" />
     <ClInclude Include="skrextend\tstring\tiostream.h" />
     <ClInclude Include="skrextend\tstring\tstring.h" />
-    <ClInclude Include="skrextend\scriptreader\tokengetter\TokenGetter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

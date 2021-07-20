@@ -1,14 +1,21 @@
 #pragma once
 
-namespace std {
 
-#ifdef _UNICODE
-	using _tstring = wstring;
-#else
-	using _tstring = string;
-#endif // _UNICODE
+#if defined(_UNICODE) || defined(UNICODE)
 
-} // namespace std
+	#define _tstring    wstring;
+
+
+
+
+#else // _UNICODE || UNICODE
+
+	#define _tstring    string;
+
+
+
+
+#endif // _UNICODE || UNICODE
 
 
 
