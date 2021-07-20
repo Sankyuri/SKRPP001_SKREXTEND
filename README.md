@@ -1,15 +1,15 @@
 # Tree of implemented features
 
-* namespace skrextend
-    * common
+* namespace skrex
+    * common/
         * <span style="color: forestgreen;">class SciptReaderException</span>
-    * memoryex
+    * memoryex/
         * <span style="color: mediumblue;">memoryex.h</span>
-    * memriff
+    * memriff/
         * <span style="color: mediumblue;">memoriff.h</span>
-    * tokenizer
+    * tokenizer/
         * <span style="color: forestgreen;">class Tokenizer</span>
-    * std
+    * std/
         * <span style="color: mediumblue;">tstring.h</span>
 
 
