@@ -1,12 +1,10 @@
 #pragma once
 #include <Windows.h>
 #include <mmsystem.h>
+#include "../common/types.h"
 
 
 namespace skrex {
-
-
-using Byte = unsigned char;
 
 
 // Check this data is RIFF.

@@ -3,14 +3,14 @@
 
 #if defined(_UNICODE) || defined(UNICODE)
 
-	#define _tstring    wstring;
+	#define _tstring    wstring
 
 
 
 
 #else // _UNICODE || UNICODE
 
-	#define _tstring    string;
+	#define _tstring    string
 
 
 

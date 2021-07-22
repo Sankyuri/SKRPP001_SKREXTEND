@@ -1,11 +1,9 @@
 #pragma once
 #include <cstdint>
+#include "../common/types.h"
 
 
 namespace skrex {
-
-
-using Byte = unsigned char;
 
 
 // Find index of a_val in a_buf.

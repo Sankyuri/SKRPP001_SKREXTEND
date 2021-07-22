@@ -1,6 +1,6 @@
 ﻿#include "memriff.h"
 #include <memory>
-#include "../memoryex/memoryex.h"
+#include "../memory/memoryex.h"
 
 
 

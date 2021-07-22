@@ -18,7 +18,7 @@
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="skrextend\memoryex\memoryex.cpp">
+    <ClCompile Include="skrextend\memory\memoryex.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="skrextend\tokenizer\Tokenizer.cpp">
@@ -47,16 +47,28 @@
     <ClInclude Include="skrextend\std\tstring\tiostream.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skrextend\memoryex\memoryex.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="skrextend\common\ScriptReaderException.h">
+    <ClInclude Include="skrextend\common\exception\ScriptReaderException.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="skrextend\tokenizer\Tokenizer.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="skrextend\memriff\memriff.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\common\assert\notassert.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\common\assert\notassertmsg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\common\assert\assertmsg.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\memory\memoryex.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\common\types.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
