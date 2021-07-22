@@ -148,6 +148,7 @@
     <ClInclude Include="skrextend\common\assert\assertmsg.h" />
     <ClInclude Include="skrextend\common\assert\notassert.h" />
     <ClInclude Include="skrextend\common\assert\notassertmsg.h" />
+    <ClInclude Include="skrextend\common\math\inRange.h" />
     <ClInclude Include="skrextend\common\types.h" />
     <ClInclude Include="skrextend\memory\memoryex.h" />
     <ClInclude Include="skrextend\memriff\memriff.h" />

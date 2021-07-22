@@ -71,5 +71,8 @@
     <ClInclude Include="skrextend\common\types.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="skrextend\common\math\inRange.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
