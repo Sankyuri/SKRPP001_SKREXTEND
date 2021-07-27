@@ -28,19 +28,29 @@ Tokenizer::Tokenizer(const std::string &a_fileName) :
 	m_chd(0),
 	m_ctl(0)
 {
-	std::ifstream ifs(a_fileName);
-	if ( ! ifs.is_open()) {
-		throw (a_fileName);
+	if ( ! openScriptFile(a_fileName)) {
+		throw FileOpenException(a_fileName);
 	}
-	m_str.clear();
-	m_str = std::string(std::istreambuf_iterator<char>(ifs),
-						std::istreambuf_iterator<char>());
-	ifs.close();
 }
 
 
 
 
+
+
+
+
+bool Tokenizer::openScriptFile(const std::string &a_fileName)
+{
+	std::ifstream ifs(a_fileName);
+	if (ifs.is_open()) {
+		m_str = std::string(std::istreambuf_iterator<char>(ifs),
+							std::istreambuf_iterator<char>());
+		ifs.close();
+		return true;
+	}
+	return false;
+}
 
 
 

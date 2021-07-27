@@ -17,8 +17,17 @@ public:
 
 
 
+	// open script file
+	// @a_fileName Script file name.
+	// @return If succeeded to load file then return true, otherwise return false.
+	bool openScriptFile(const std::string &a_fileName);
+
+
 	// set script data
 	void setScriptData(const std::string &a_data);
+
+
+
 
 	// Returns length of current token.
 	// @return Length of current token.
