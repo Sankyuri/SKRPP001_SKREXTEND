@@ -90,7 +90,7 @@ bool skrex::memRIFFDescend(
 
 	// copy data
 	a_pmmcki->cksize       = sz;
-	a_pmmcki->dwDataOffset = offset + idx + CKIDSIZE + sizeof(int32_t);
+	a_pmmcki->dwDataOffset = (DWORD)(offset + idx + CKIDSIZE + sizeof(int32_t));
 
 
 	return true;
