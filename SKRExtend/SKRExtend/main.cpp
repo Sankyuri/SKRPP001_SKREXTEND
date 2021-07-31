@@ -7,8 +7,9 @@
 #include "skrextend/tokenizer/Tokenizer.h"
 #include "skrextend/memory/memoryex.h"
 #include "skrextend/memriff/memriff.h"
-#include "skrextend/common/assert/assertmsg.h"
-#include "skrextend/common/math/inRange.h"
+#include "skrextend/assert/assertmsg.h"
+#include "skrextend/math/inRange.h"
+#include "skrextend/convert/TryParse.h"
 
 
 
@@ -128,6 +129,48 @@ int main() {
 			cout << NUM << " is outer to (0, 5)!" << endl;
 		}
 	}
+
+
+
+
+	// TryParse sample
+	cout << endl << "[TryParse SAMPLE!]" << endl;
+	{
+		// Check string is parsable to int or otherwise.
+		constexpr auto str1 = "0x122287";
+		constexpr auto str2 = "544123.2558";
+		constexpr auto str3 = "FALSE";
+		if (skrex::TryParse::toInt(str1)) {
+			cout << str1 << " is convertable to int!"        << endl;
+		} else {
+			cout << str1 << " is not convertable to int!"    << endl;
+		}
+		if (skrex::TryParse::toUShort(str1)) {
+			cout << str1 << " is convertable to ushort!"     << endl;
+		} else {
+			cout << str1 << " is not convertable to ushort!" << endl;
+		}
+		if (skrex::TryParse::toFloat(str2)) {
+			cout << str2 << " is convertable to float!"      << endl;
+		} else {
+			cout << str2 << " is not convertable to float!"  << endl;
+		}
+		// Check string is "true" or "false" with ignore case.
+		if (skrex::TryParse::isBoolString(str2)) {
+			cout << str2 << " is boolean string!"            << endl;
+		} else {
+			cout << str2 << " is not boolean string!"        << endl;
+		}
+		if (skrex::TryParse::isBoolString(str3)) {
+			cout << str3 << " is boolean string!"            << endl;
+		} else {
+			cout << str3 << " is not boolean string!"        << endl;
+		}
+	}
+
+
+
+
 }
 
 

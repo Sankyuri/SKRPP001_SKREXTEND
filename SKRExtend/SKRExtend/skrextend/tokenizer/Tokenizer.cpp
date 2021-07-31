@@ -1,6 +1,6 @@
 #pragma once
 #include "Tokenizer.h"
-#include "../common/exception/ScriptReaderException.h"
+#include "../exception/ScriptReaderException.h"
 #include <fstream>
 #include <algorithm>
 

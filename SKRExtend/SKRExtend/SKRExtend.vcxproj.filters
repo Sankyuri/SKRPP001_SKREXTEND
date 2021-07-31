@@ -27,6 +27,9 @@
     <ClCompile Include="skrextend\memriff\memriff.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="skrextend\convert\TryParse.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="skrextend\tstring\tiosfwd.h">
@@ -47,7 +50,7 @@
     <ClInclude Include="skrextend\std\tstring\tiostream.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skrextend\common\exception\ScriptReaderException.h">
+    <ClInclude Include="skrextend\exception\ScriptReaderException.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="skrextend\tokenizer\Tokenizer.h">
@@ -56,13 +59,13 @@
     <ClInclude Include="skrextend\memriff\memriff.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skrextend\common\assert\notassert.h">
+    <ClInclude Include="skrextend\assert\notassert.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skrextend\common\assert\notassertmsg.h">
+    <ClInclude Include="skrextend\assert\notassertmsg.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skrextend\common\assert\assertmsg.h">
+    <ClInclude Include="skrextend\assert\assertmsg.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="skrextend\memory\memoryex.h">
@@ -71,7 +74,13 @@
     <ClInclude Include="skrextend\common\types.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skrextend\common\math\inRange.h">
+    <ClInclude Include="skrextend\math\inRange.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\exception\ExceptionCouple.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="skrextend\convert\TryParse.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
