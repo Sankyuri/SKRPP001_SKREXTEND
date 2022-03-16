@@ -10,7 +10,7 @@
 #include "skrextend/assert/assertmsg.h"
 #include "skrextend/math/inRange.h"
 #include "skrextend/convert/TryParse.h"
-#include "skrextend/colsole/ConsoleYesNo.h"
+#include "skrextend/console/ConsoleYesNo.h"
 #include "skrextend/functional/FunctionOnce.h"
 #include "skrextend/functional/FunctionOnceSet.h"
 
