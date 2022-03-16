@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="skrextend\colsole\ConsoleYesNo.cpp" />
     <ClCompile Include="skrextend\convert\TryParse.cpp" />
     <ClCompile Include="skrextend\memory\memoryex.cpp" />
     <ClCompile Include="skrextend\memriff\memriff.cpp" />
@@ -149,7 +150,10 @@
     <ClInclude Include="skrextend\assert\assertmsg.h" />
     <ClInclude Include="skrextend\assert\notassert.h" />
     <ClInclude Include="skrextend\assert\notassertmsg.h" />
+    <ClInclude Include="skrextend\colsole\ConsoleYesNo.h" />
     <ClInclude Include="skrextend\exception\ExceptionCouple.h" />
+    <ClInclude Include="skrextend\functional\FunctionOnce.h" />
+    <ClInclude Include="skrextend\functional\FunctionOnceSet.h" />
     <ClInclude Include="skrextend\math\inRange.h" />
     <ClInclude Include="skrextend\common\types.h" />
     <ClInclude Include="skrextend\convert\TryParse.h" />

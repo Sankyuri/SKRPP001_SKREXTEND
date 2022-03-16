@@ -10,6 +10,9 @@
 #include "skrextend/assert/assertmsg.h"
 #include "skrextend/math/inRange.h"
 #include "skrextend/convert/TryParse.h"
+#include "skrextend/colsole/ConsoleYesNo.h"
+#include "skrextend/functional/FunctionOnce.h"
+#include "skrextend/functional/FunctionOnceSet.h"
 
 
 
@@ -44,13 +47,17 @@ int main() {
 	{
 		// Tokenizer can be split by space.
 		// This demo uses a text file.
-		skrex::Tokenizer tknzr("test.txt");
-		cout << tknzr.last() << endl;
-		while ( ! tknzr.isEnd()) {
-			cout << tknzr.next() << endl;
+		try {
+			skrex::Tokenizer tknzr("test.txt");
 			cout << tknzr.last() << endl;
+			while ( ! tknzr.isEnd()) {
+				cout << tknzr.next() << endl;
+				cout << tknzr.last() << endl;
+			}
+			cout << tknzr.last() << endl;
+		} catch(...) {
+			cout << "test.txt is not found!" << endl;
 		}
-		cout << tknzr.last() << endl;
 	}
 
 
@@ -165,6 +172,148 @@ int main() {
 			cout << str3 << " is boolean string!"            << endl;
 		} else {
 			cout << str3 << " is not boolean string!"        << endl;
+		}
+	}
+
+
+
+
+	// ConsoleYesNo sample
+	cout << endl << "[ConsoleYesNo SAMPLE!]" << endl;
+	{
+		// Ask to user Yes or No on console.
+		bool result = false;
+
+		cout << "Do you like strawberry?[Y/N]: ";
+
+		result = skrex::ConsoleYesNo::ask();
+
+		if (result) {
+			cout << "Ya! You like strawberry!" << endl;
+		} else {
+			cout << "Oh... You don't like strawberry..." << endl;
+		}
+	}
+
+
+
+
+	// FunctionOnce sample
+	cout << endl << "[FunctionOnce SAMPLE!]" << endl;
+	{
+		// Once the function is called, the object will do nothing after that.
+		constexpr int LOOPNUM = 5;
+
+		auto fn1 = []( int a_n ){
+			return std::string( "Funcion 1 called! n = " )
+				       + std::to_string( a_n )
+				       + std::string( "!\n" );
+		};
+		auto fn2 = [](){
+			return std::string( "Funcion 1 called!\n" );
+		};
+		auto fn3 = []( int a_n ){
+			cout << "Funcion 3 called! n = " << a_n << "!" << endl;
+		};
+		auto fn4 = [](){
+			cout << "Funcion 4 called!" << endl;
+		};
+
+		auto fo1 = skrex::FunctionOnce<std::string, int>     ( fn1 );
+		auto fo2 = skrex::FunctionOnceNoArgument<std::string>( fn2 );
+		auto fo3 = skrex::FunctionOnceNoReturn<int>          ( fn3 );
+		auto fo4 = skrex::FunctionOnceNoAll                  ( fn4 );
+		
+		// This class has argument, do return value.
+		cout  << "    skrex::FunctionOnce:" << endl;
+		for (int i = 0; i < LOOPNUM; ++i) {
+			cout << fo1.execute( 10 + i );
+		}
+
+		// This class has not argument, do return value.
+		cout  << "    skrex::FunctionOnceNoArgument:" << endl;
+		for (int i = 0; i < LOOPNUM; ++i) {
+			cout << fo2.execute();
+		}
+
+		// This class has argument, do not return value.
+		cout  << "    skrex::FunctionOnceNoReturn:" << endl;
+		for (int i = 0; i < LOOPNUM; ++i) {
+			fo3.execute( 14 + i );
+		}
+
+		// This class has not argument, do not return value.
+		cout  << "    skrex::FunctionOnceNoAll:" << endl;
+		for (int i = 0; i < LOOPNUM; ++i) {
+			fo4.execute();
+		}
+	}
+
+
+
+
+	// FunctionOnceSet sample
+	cout << endl << "[FunctionOnceSet SAMPLE!]" << endl;
+	{
+		// Once the function is called, the object will change to other function after that.
+		constexpr int LOOPNUM = 5;
+
+		auto fn1 = []( int a_n ){
+			return std::string( "Funcion 1 called! n = " )
+				       + std::to_string( a_n )
+				       + std::string( "!\n" );
+		};
+		auto fn2 = [](){
+			return std::string( "Funcion 1 called!\n" );
+		};
+		auto fn3 = []( int a_n ){
+			cout << "Funcion 3 called! n = " << a_n << "!" << endl;
+		};
+		auto fn4 = [](){
+			cout << "Funcion 4 called!" << endl;
+		};
+		auto fn5 = []( int a_n ){
+			return std::string( "Funcion 5 called! n = " )
+				       + std::to_string( a_n )
+				       + std::string( "!\n" );
+		};
+		auto fn6 = [](){
+			return std::string( "Funcion 6 called!\n" );
+		};
+		auto fn7 = []( int a_n ){
+			cout << "Funcion 7 called! n = " << a_n << "!" << endl;
+		};
+		auto fn8 = [](){
+			cout << "Funcion 8 called!" << endl;
+		};
+
+		auto fo1 = skrex::FunctionOnceSet<std::string, int>     ( fn1, fn5 );
+		auto fo2 = skrex::FunctionOnceSetNoArgument<std::string>( fn2, fn6 );
+		auto fo3 = skrex::FunctionOnceSetNoReturn<int>          ( fn3, fn7 );
+		auto fo4 = skrex::FunctionOnceSetNoAll                  ( fn4, fn8 );
+		
+		// This class has argument, do return value.
+		cout  << "    skrex::FunctionOnceSet:" << endl;
+		for (int i = 0; i < LOOPNUM; ++i) {
+			cout << fo1.execute( 17 + i );
+		}
+
+		// This class has not argument, do return value.
+		cout  << "    skrex::FunctionOnceSetNoArgument:" << endl;
+		for (int i = 0; i < LOOPNUM; ++i) {
+			cout << fo2.execute();
+		}
+
+		// This class has argument, do not return value.
+		cout  << "    skrex::FunctionOnceSetNoReturn:" << endl;
+		for (int i = 0; i < LOOPNUM; ++i) {
+			fo3.execute( 12 + i );
+		}
+
+		// This class has not argument, do not return value.
+		cout  << "    skrex::FunctionOnceSetNoAll:" << endl;
+		for (int i = 0; i < LOOPNUM; ++i) {
+			fo4.execute();
 		}
 	}
 
