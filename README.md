@@ -7,10 +7,23 @@
         * <span style="color: mediumblue;">notassertmsg.h</span>
     * common\
         * <span style="color: mediumblue;">types.h</span>
+    * console\
+        * <span style="color: forestgreen;">class ConsoleYesNo</span>
     * convert\
         * <span style="color: forestgreen;">class TryParse</span>
-    * exception
+    * exception\
         * <span style="color: forestgreen;">class SciptReaderException</span>
+    * functional\
+        * <span style="color: mediumblue;">FunctionalOnce.h</span>
+            * <span style="color: forestgreen;">class FunctionalOnce</span>
+            * <span style="color: forestgreen;">class FunctionalOnceNoAll</span>
+            * <span style="color: forestgreen;">class FunctionalOnceNoArgument</span>
+            * <span style="color: forestgreen;">class FunctionalOnceNoReturn</span>
+        * <span style="color: mediumblue;">FunctionalOnceSet.h</span>
+            * <span style="color: forestgreen;">class FunctionalOnceSet</span>
+            * <span style="color: forestgreen;">class FunctionalOnceSetNoAll</span>
+            * <span style="color: forestgreen;">class FunctionalOnceSetNoArgument</span>
+            * <span style="color: forestgreen;">class FunctionalOnceSetNoReturn</span>
     * math\
         * <span style="color: mediumblue;">inRange.h</span>
     * memory\
