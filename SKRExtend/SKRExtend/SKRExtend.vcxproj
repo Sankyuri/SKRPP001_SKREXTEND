@@ -18,6 +18,33 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="skrextend\include\assert\assertmsg.h" />
+    <ClInclude Include="skrextend\include\assert\notassert.h" />
+    <ClInclude Include="skrextend\include\assert\notassertmsg.h" />
+    <ClInclude Include="skrextend\include\common\types.h" />
+    <ClInclude Include="skrextend\include\console\ConsoleYesNo.h" />
+    <ClInclude Include="skrextend\include\convert\TryParse.h" />
+    <ClInclude Include="skrextend\include\exception\ExceptionCouple.h" />
+    <ClInclude Include="skrextend\include\exception\ScriptReaderException.h" />
+    <ClInclude Include="skrextend\include\functional\FunctionOnce.h" />
+    <ClInclude Include="skrextend\include\functional\FunctionOnceSet.h" />
+    <ClInclude Include="skrextend\include\math\inRange.h" />
+    <ClInclude Include="skrextend\include\memory\memoryex.h" />
+    <ClInclude Include="skrextend\include\memriff\memriff.h" />
+    <ClInclude Include="skrextend\include\std\tstring\tiosfwd.h" />
+    <ClInclude Include="skrextend\include\std\tstring\tiostream.h" />
+    <ClInclude Include="skrextend\include\std\tstring\tstring.h" />
+    <ClInclude Include="skrextend\include\tokenizer\Tokenizer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="skrextend\source\console\ConsoleYesNo.cpp" />
+    <ClCompile Include="skrextend\source\convert\TryParse.cpp" />
+    <ClCompile Include="skrextend\source\memory\memoryex.cpp" />
+    <ClCompile Include="skrextend\source\memriff\memriff.cpp" />
+    <ClCompile Include="skrextend\source\tokenizer\Tokenizer.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
@@ -138,36 +165,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="skrextend\console\ConsoleYesNo.cpp" />
-    <ClCompile Include="skrextend\convert\TryParse.cpp" />
-    <ClCompile Include="skrextend\memory\memoryex.cpp" />
-    <ClCompile Include="skrextend\memriff\memriff.cpp" />
-    <ClCompile Include="skrextend\tokenizer\Tokenizer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="skrextend\assert\assertmsg.h" />
-    <ClInclude Include="skrextend\assert\notassert.h" />
-    <ClInclude Include="skrextend\assert\notassertmsg.h" />
-    <ClInclude Include="skrextend\console\ConsoleYesNo.h" />
-    <ClInclude Include="skrextend\exception\ExceptionCouple.h" />
-    <ClInclude Include="skrextend\functional\FunctionOnce.h" />
-    <ClInclude Include="skrextend\functional\FunctionOnceSet.h" />
-    <ClInclude Include="skrextend\math\inRange.h" />
-    <ClInclude Include="skrextend\common\types.h" />
-    <ClInclude Include="skrextend\convert\TryParse.h" />
-    <ClInclude Include="skrextend\memory\memoryex.h" />
-    <ClInclude Include="skrextend\memriff\memriff.h" />
-    <ClInclude Include="skrextend\std\tstring\tiosfwd.h" />
-    <ClInclude Include="skrextend\std\tstring\tiostream.h" />
-    <ClInclude Include="skrextend\std\tstring\tstring.h" />
-    <ClInclude Include="skrextend\exception\ScriptReaderException.h" />
-    <ClInclude Include="skrextend\tokenizer\Tokenizer.h" />
-    <ClInclude Include="skrextend\tstring\tiosfwd.h" />
-    <ClInclude Include="skrextend\tstring\tiostream.h" />
-    <ClInclude Include="skrextend\tstring\tstring.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

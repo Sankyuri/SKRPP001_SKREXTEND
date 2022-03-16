@@ -5,11 +5,13 @@ Date format is YYYY/MM/DD (Japanese style).
 
 
 		2022/03/16
-Added some classes and fixed a misstakes.
-+  Added console\ConsoleYesNo.
-+  Added FunctionalOnce and FunctionalOnceSet in functional\.
-*  Fixed if failed to open test.exe file, on Tokenizer sample on main().
-+F Created this file (changelog.txt).
+R>! Sorted files to include\ and source\.
+
+#   Added some classes and fixed a misstakes.
+  +   Added console\ConsoleYesNo.
+  +   Added FunctionalOnce and FunctionalOnceSet in functional\.
+  *   Fixed if failed to open test.exe file, on Tokenizer sample on main().
+  R+  Created this file (changelog.txt).
 
 
 

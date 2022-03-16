@@ -2,17 +2,17 @@
 #include <string>
 #include <tchar.h>
 
-#include "skrextend/std/tstring/tstring.h"
-#include "skrextend/std/tstring/tiostream.h"
-#include "skrextend/tokenizer/Tokenizer.h"
-#include "skrextend/memory/memoryex.h"
-#include "skrextend/memriff/memriff.h"
-#include "skrextend/assert/assertmsg.h"
-#include "skrextend/math/inRange.h"
-#include "skrextend/convert/TryParse.h"
-#include "skrextend/console/ConsoleYesNo.h"
-#include "skrextend/functional/FunctionOnce.h"
-#include "skrextend/functional/FunctionOnceSet.h"
+#include "skrextend/include/std/tstring/tstring.h"
+#include "skrextend/include/std/tstring/tiostream.h"
+#include "skrextend/include/tokenizer/Tokenizer.h"
+#include "skrextend/include/memory/memoryex.h"
+#include "skrextend/include/memriff/memriff.h"
+#include "skrextend/include/assert/assertmsg.h"
+#include "skrextend/include/math/inRange.h"
+#include "skrextend/include/convert/TryParse.h"
+#include "skrextend/include/console/ConsoleYesNo.h"
+#include "skrextend/include/functional/FunctionOnce.h"
+#include "skrextend/include/functional/FunctionOnceSet.h"
 
 
 
